@@ -1823,7 +1823,7 @@ class TNFe(GeneratedsSuper):
         if self.infNFeSupl is not None:
             self.infNFeSupl.export(outfile, level, namespaceprefix_, namespacedef_='', name_='infNFeSupl', pretty_print=pretty_print)
         if self.Signature is not None:
-            self.Signature.export(outfile, level, namespaceprefix_='ds:', namespacedef_='', name_='Signature', pretty_print=pretty_print)
+            self.Signature.export(outfile, level, namespaceprefix_, namespacedef_='', name_='Signature', pretty_print=pretty_print)
     def build(self, node):
         already_processed = set()
         self.buildAttributes(node, node.attrib, already_processed)
